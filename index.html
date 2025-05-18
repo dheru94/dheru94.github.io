@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Responsive Meta Tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dheeraj Kumar | Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+
+    <meta name="description"
+        content="Dheeraj Kumar – AI/ML Enthusiast, Python Developer, and Data Science Explorer. Explore my projects, skills, and experience in machine learning and software development.">
+    <meta name="keywords"
+        content="Dheeraj Kumar, AI Developer, Machine Learning, Python Developer, Data Science, Portfolio, Projects, Resume">
+    <meta name="author" content="Dheeraj Kumar">
+
+    <!-- Open Graph Meta Tags (for social media previews) -->
+    <meta property="og:title" content="Dheeraj Kumar | AI/ML Enthusiast & Python Developer">
+    <meta property="og:description"
+        content="Explore my projects, skills, and experience in machine learning, data science, and Python development.">
+    <meta property="og:image" content="https://yourdomain.com/images/mypho.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:type" content="website">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Dheeraj</div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="theme-toggle" id="themeToggle" title="Toggle light/dark theme">
+                    🌙
+                </div>
+
+                <div class="menu-toggle" id="menuToggle">&#9776</div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dheeraj-kumar-57352224a/" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/dheru94" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/@DheerajKum85671" target="_blank"><i class="fab fa-twitter"></i></a>
+
+        </div>
+        <div class="hero-text">
+            <h1>Hello, I'm <span id="typed-name">Dheeraj</span></h1>
+            <p>AI/ML Enthusiast • Python Developer • Data Science Explorer</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+        <div class="hero-img">
+            <img src="images/mypho.jpg" alt="Your profile picture" />
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Dheeraj Kumar — a passionate and results-driven AI/ML enthusiast with a B.Tech in Computer Science
+            and Engineering. I specialize in building intelligent systems that solve real-world problems using machine
+            learning, deep learning, and natural language processing. My projects range from end-to-end chatbot
+            development to custom neural networks and image classification models.
+
+            With a strong foundation in Python, SQL, and tools like TensorFlow, Hugging Face, and FastAPI, I love
+            turning complex ideas into working prototypes. I’m particularly excited about applying Large Language Models
+            (LLMs) and modern AI techniques to create impactful, scalable solutions.
+
+            Whether it's crafting a data-driven backend or designing intuitive user experiences powered by AI, I'm
+            always exploring, learning, and building.
+        </p>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <h2>Experience</h2>
+        <p>My journey in the academic & professional front</p>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showExperienceTab('academic', this)">🎓 Academic</button>
+            <button class="tab" onclick="showExperienceTab('professional', this)">💼 Professional</button>
+        </div>
+
+        <!-- Academic Timeline -->
+        <div id="academic" class="timeline">
+            <div class="timeline-entry left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-info">
+                    <h3>B.Tech – Computer Science</h3>
+                    <p>College of Technology, Pantnagar, India</p>
+                    <p><i class="fas fa-calendar-alt"></i> 2020 – 2024</p>
+                </div>
+            </div>
+
+            <div class="timeline-entry right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-info">
+                    <h3>Class XII</h3>
+                    <p>PCM Stream | Ever Green Sr.Sec. School School, India</p>
+                    <p><i class="fas fa-calendar-alt"></i> 2018 – 2019</p>
+                </div>
+            </div>
+
+            <div class="timeline-entry left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-info">
+                    <h3>Class X</h3>
+                    <p>CBSE | Ever Green Sr.Sec. School, India</p>
+                    <p><i class="fas fa-calendar-alt"></i> 2016 – 2017</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Placeholder -->
+        <div id="professional" class="timeline" style="display: none;">
+            <div class="timeline-entry center">
+                <div class="timeline-dot"></div>
+                <div class="timeline-info">
+                    <h3>No professional experience yet</h3>
+                    <p>Actively seeking exciting opportunities to grow and contribute!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <a href="https://food-corner-chatbot.onrender.com/" target="_blank" class="project-card">
+                <img src="images/Screenshot 2025-05-07 080436.png" alt="Project 1" />
+                <h3>Food-Ordering Chatbot</h3>
+                <p>A chatbot to help users place food orders using AI-driven interaction.</p>
+            </a>
+            <a href="https://github.com/dheru94/Implementing-Linear-Regression-FROM-SCRATCH-using-PYTHON"
+                target="_blank" class="project-card">
+                <img src="images/Simple_LR.png" alt="Project 2" />
+                <h3>Linear Regression</h3>
+                <p>Implemented Linear Regression from scratch without external libraries.</p>
+            </a>
+            <a href="https://github.com/dheru94/cat-and-dog-image-classification" target="_blank" class="project-card">
+                <img src="images/cat&dog.png" alt="Project 2" />
+                <h3>Cat.&.Dog Classification</h3>
+                <p>Locally deployed cat & dog image classification model</p>
+            </a>
+            <a href="https://github.com/dheru94/image-Classification-with-cnn" target="_blank" class="project-card">
+                <img src="images/imageCNN.png" alt="Project 2" />
+                <h3>image Classification(cnn)</h3>
+                <p>implementation of an image classification model using CNN with TensorFlow and Keras.</p>
+            </a>
+            <a href="https://github.com/dheru94/implementing-simple-neural-network-with-python" target="_blank"
+                class="project-card">
+                <img src="images/SimpleNeuron.png" alt="Project 2" />
+                <h3>Simple Neuron</h3>
+                <p>understand working of a single neuron in deep learning</p>
+            </a>
+            <a href="https://github.com/dheru94/Customer-Churn-prediction/tree/main/heee" target="_blank"
+                class="project-card">
+                <img src="images/churn.png" alt="Project 2" />
+                <h3>Customer-Churn-prediction</h3>
+                <p>ML model to predict customer churn and boost retention.</p>
+            </a>
+            <!-- <a href="#" target="_blank" class="project-card">
+                <img src="placeholder.jpg" alt="Project 2" />
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project goes here.</p>
+            </a> -->
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>
+                        <i class="devicon-python-plain colored"></i> Python
+                        <div class="progress-bar" data-skill="80">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-mysql-plain colored"></i> SQL
+                        <div class="progress-bar" data-skill="70">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-html5-plain colored"></i> HTML
+                        <div class="progress-bar" data-skill="80">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-css3-plain colored"></i> CSS
+                        <div class="progress-bar" data-skill="65">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <ul>
+                    <li>
+                        <i class="devicon-fastapi-plain colored"></i> FastAPI
+                        <div class="progress-bar" data-skill="60">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-tensorflow-original colored"></i> TensorFlow
+                        <div class="progress-bar" data-skill="70">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-scikitlearn-plain colored"></i> Scikit-learn
+                        <div class="progress-bar" data-skill="70">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-scikitlearn-plain colored"></i> Pandas
+                        <div class="progress-bar" data-skill="80">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <ul>
+                    <li>
+                        <i class="devicon-mysql-plain colored"></i> MySQL
+                        <div class="progress-bar" data-skill="80">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-git-plain colored"></i> Git
+                        <div class="progress-bar" data-skill="75">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-github-original colored"></i> GitHub
+                        <div class="progress-bar" data-skill="75">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-vscode-plain colored"></i> VS Code
+                        <div class="progress-bar" data-skill="85">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>AI/ML Focus</h3>
+                <ul>
+                    <li>
+                        <i class="devicon-tensorflow-original colored"></i> Deep Learning
+                        <div class="progress-bar" data-skill="80">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-python-plain colored"></i> NLP
+                        <div class="progress-bar" data-skill="75">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-python-plain colored"></i> LLMs
+                        <div class="progress-bar" data-skill="55">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="devicon-python-plain colored"></i> Computer Vision
+                        <div class="progress-bar" data-skill="70">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p>Let's connect and build something great!</p>
+
+        <form class="contact-form" action="https://formspree.io/f/mrbqjdkb" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="mailto:dheerajkumar.sm.cse@gmail.com" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/dheru94" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dheeraj-kumar-57352224a/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Dheeraj Kumar. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
